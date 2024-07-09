@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/*.go", "use": "@vercel/go" }
+    ],
+    "routes": [
+      { "src": "/api/courses", "dest": "api/courses.go" },
+      { "src": "/api/courses/{id}", "dest": "api/courses.go" },
+      { "src": "/api/classrooms", "dest": "api/classrooms.go" },
+      { "src": "/api/classrooms/{id}", "dest": "api/classrooms.go" }
+    ]
+  }
