@@ -1,8 +1,8 @@
 package utils
 
 import (
-    "encoding/json"
-    "net/http"
+	"encoding/json"
+	"net/http"
 )
 
 func RespondWithError(w http.ResponseWriter, code int, message string) {
